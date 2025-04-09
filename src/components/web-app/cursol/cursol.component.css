@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    line-height: 1;
+  }
+  .cursol {
+    width: 800px;
+    margin: 100px auto;
+    background-color: #8ce99a;
+    color: white;
+    padding: 32px;
+    padding-left: 86px;
+    padding-right: 48px;
+    display: flex;
+    /*align-items: center;*/
+    gap: 86px;
+    position: relative;
+  }
+  .textorial-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+  .textorial-author {
+    font-size: 15px;
+    color: green;
+    margin-bottom: 8px;
+  }
+  .textorial-role {
+    font-size: 13px;
+    color: green;
+  }
+  .imag {
+    height: 200px;
+    border-radius: 8px;
+    width: 200px;
+    transform: scale(1.5);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  .btn {
+    background-color: #fff;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+  .size-6 {
+    height: 24px;
+    width: 24px;
+  }
+  .btn--left {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .btn--right {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+  .dots {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 32px);
+    display: flex;
+    gap: 12px;
+  }
+  .dot {
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .green {
+    background-color: green;
+  }

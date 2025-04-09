@@ -1,0 +1,20 @@
+<p>for-track works!</p>
+<div class="container">
+    <div class="mb-2">
+        <button class="btn btn-primary" (click)="GetUpdatedData()">Get Updated Data</button>
+    </div>
+    <table class="table table-hover">
+        <thead>
+            <th>EmpId</th>
+            <th>EmpName</th>
+            <th>Salary</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of emps;trackBy:TrackChanges">
+                <td>{{item.empId}}</td>
+                <td>{{item.empName}}</td>
+                <td>{{item.salary}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

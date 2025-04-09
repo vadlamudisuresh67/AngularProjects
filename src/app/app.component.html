@@ -1,0 +1,12 @@
+<div class="form-center">
+  <h1>user Form</h1>
+  <form (submit)="frmSubmit(f)" #f='ngForm'>
+    <input type="text" placeholder="Name" name="name" />
+    <br />
+    <br />
+    <input type="email" placeholder="Email" name="email"/><br />
+    <br />
+    <input type="text" placeholder="Address" name="addresss"/><br /><br />
+    <button>Submit</button>
+  </form>
+</div>

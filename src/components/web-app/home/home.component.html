@@ -1,0 +1,76 @@
+<p>home works!</p>
+
+<div class="container-fluid">
+  <h1 class="text-center">Student Information</h1>
+  <hr />
+  <table border="1">
+    <tr>
+      <th>studentID</th>
+      <td>{{ stdId }}</td>
+    </tr>
+
+    <tr>
+      <th>studentName</th>
+      <td>{{ stdName }}</td>
+    </tr>
+
+    <tr>
+      <th>Subject1</th>
+      <td>{{ sub1 }}</td>
+    </tr>
+    <tr>
+      <th>Subject2</th>
+      <td>{{ sub2 }}</td>
+    </tr>
+    <tr>
+      <th>Subject3</th>
+      <td>{{ sub3 }}</td>
+    </tr>
+
+    <tr>
+      <th>Total Marks</th>
+      <td>{{ marks }}</td>
+    </tr>
+
+    <tr>
+      <th>Avg Marks are</th>
+      <td>{{ result }}</td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>Enter StudentId</td>
+      <td><input type="text" [(ngModel)]="stdId" /></td>
+    </tr>
+
+    <tr>
+      <td>Enter Student Name</td>
+      <td><input type="text" [(ngModel)]="stdName" /></td>
+    </tr>
+
+    <tr>
+      <td>Enter Student Subect1</td>
+      <td><input type="text" [(ngModel)]="sub1" /></td>
+    </tr>
+
+    <tr>
+      <td>Enter Student Subject2</td>
+      <td><input type="text" [(ngModel)]="sub2" /></td>
+    </tr>
+
+    <tr>
+      <td>Enter Student Subject3</td>
+      <td><input type="text" [(ngModel)]="sub3" /></td>
+    </tr>
+
+    <tr>
+      <td>Enter Student Marks</td>
+      <td><input type="text" [(ngModel)]="marks" /></td>
+    </tr>
+    <table>
+  </table>
+
+  <button (click)="calculation()">calResult</button>
+
+

@@ -1,0 +1,29 @@
+<nav class="navbar">
+  <div class="logo">ATS</div>
+
+  <ul class="nav-links">
+    <li><a routerLink="home">Home</a></li>
+    <li><a routerLink="ngIf">About</a></li>
+    <li><a routerLink="login">Loginin</a></li>
+    <li><a routerLink="register">Singup</a></li>
+  </ul>
+</nav>
+
+<input type="checkbox" id="sidebar-toggle" />
+<div class="main-container">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h3>Menu</h3>
+    </div>
+    <div class="sidebar-menu">
+      <ul>
+        <li><a routerLink="home">Home</a></li>
+        <li><a routerLink="ngIf">About Us</a></li>
+        <li><a routerLink="user">UserList</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a routerLink="cursol">Cursols</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

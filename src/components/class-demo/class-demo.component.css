@@ -1,0 +1,12 @@
+.bg-style{
+    background-color: yellow;
+}
+.text-style{
+    color:blue;
+    text-align:center;
+    padding: 10px;
+
+}
+.border-style{
+  border: 2px solid red;
+}

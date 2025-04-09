@@ -1,0 +1,35 @@
+<div class="container">
+    <h3>Shopping container & ng Switch container</h3>
+    <div class="btn-toolbar mt-4">
+        <div class="btn-group">
+            <button class=" btn btn-warning" name="basic" (click)="ChangeTemplate($event)">Basic</button>
+            <button class=" btn btn-warning" name="preview" (click)="ChangeTemplate($event)">Preview</button>
+            <button class=" btn btn-warning" name="rating" (click)="ChangeTemplate($event)">Rating</button>
+            <button class=" btn btn-warning" name="description" (click)="ChangeTemplate($event)">Description</button>
+        </div>
+    </div>
+
+    <div class="mt-5" [ngSwitch]="Template">
+    <div *ngSwitchCase="'basic'">
+        <h3>Basic Deatilas and Products</h3>
+        <p>{{product.title}}</p>
+    </div>
+
+    <div *ngSwitchCase="'preview'">
+        <h3>Image Preview</h3>
+        <img [src]="product.image" width="200" height="200">
+    </div>
+
+    <div *ngSwitchCase="'rating'">
+        <h3>Rating & Price</h3>
+        <p>{{product.price}}</p>
+        <p class="bi bi-star-fill"></p>
+        
+    </div>
+
+    <div *ngSwitchCase="'description'">
+        <h3>Description</h3>
+        <p>{{product.description}}</p>
+    </div>
+    </div>
+</div>
